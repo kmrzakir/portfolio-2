@@ -1,0 +1,269 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: calibri;
+}
+
+/* =============== DECLEAR VARAIABLES ==================== */
+:root{
+    --image-circle-color: #086489;
+    --color-primary: #020202;
+    --color-secondary: #111111;
+    --text-color:aqua;
+}
+/* ================ COMMON STYLE ==================== */
+body
+{
+    background-color: var(--color-secondary);
+    color: white;
+}
+a
+{
+    text-decoration: none;
+    color: white;
+}
+li
+{
+    list-style-type: none;
+}
+/* ===================== STYLINK HEADER ================== */
+header
+{
+    background-color: var(--color-primary);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 80px;
+    position: fixed;
+}
+.title
+{
+    color: white;
+    font-size: 1.5rem;
+    transition: 0.4s ease-in-out;
+    white-space: nowrap;
+}
+.title:hover
+{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.title span
+{
+    color: var(--text-color);
+}
+/* ============ STYLING a TAG ========== */
+/* a:active
+{
+    color: #111111;
+    under
+} */
+/* ================ DISABLING HAMBERGUR ICON ================ */
+.hamburger
+{
+    font-size: 1.5rem;
+    display: none;
+}
+/* ================== STYLING NAVIGATION LINKS =============== */
+.nav-bar ul
+{
+    display: flex;
+    gap: 30px;
+}
+a:hover
+{
+    color: var(--text-color);
+}
+/* ================== MAKING RESPONCIVE NAV BAR =============== */
+@media(max-width: 550px)
+{
+    .hamburger
+    {
+        display: block;
+        font-size: 1.5rem;
+        color: white;
+    }
+    .nav-bar ul
+    {
+        display: none;
+    }
+    ul.active
+    {
+        display: none;
+        position: absolute;
+        top: 60px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        left: 0px;
+        padding: 20px 0px;
+        align-items: center;
+        background-color: var(--color-primary);
+    }
+}
+@media(max-width: 330px)
+{
+   .title
+    {
+        font-size: 1rem;
+    }
+    .hamburger
+    {
+        font-size: 1rem;
+    }
+    header
+    {
+        padding: 0px 40px;
+    }
+}
+
+/* ============== STYLINK HOME SECTION ============= */
+.home
+{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home div
+{
+    padding: 20px 30px;
+}
+ .home .left_div
+ {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+ .left_div h6 span
+ {
+    color: var(--text-color);
+ }
+ #name_text, #based_in_text
+ {
+    font-size: 1.5rem;
+    white-space: nowrap;
+ }
+ #student_text
+ {
+    font-size: 6rem;
+ }
+ 
+ /* ============== STYLING IMAGE PART OF HOME SECTION =============== */
+ .home .right_div
+ {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .right_div img
+ {
+    width: 250px;
+    height: 250px;
+    border: 2px solid var(--text-color);
+    border-radius: 50%;
+ }
+ .right_div img:hover
+ {
+    box-shadow: 0px 0px 10px 4px var(--text-color);
+ }
+
+ /* ============ RESPONSIVE HOME SECTION ================ */
+@media(max-width: 860px)
+{
+    .right_div img
+    {
+        width: 200px;
+        height: 200px;
+    }
+     #name_text, #based_in_text
+    {
+    font-size: 1rem;
+    white-space: nowrap;
+    }
+    #student_text
+    {
+    font-size: 5rem;
+     }
+    
+}
+@media(max-width: 740px)
+{
+    .home div
+    {
+        padding: 5px 10px;
+    }
+}
+@media(max-width: 700px)
+{
+    .home
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+    }
+    #home_section_id div{
+        display: flex;
+        align-items: end;
+        width: 100%;
+        height: 100%;
+    }
+    .left_div h6, .left_div h1
+    {
+        text-align: center;
+    }
+    .left_div h6, .left_div h1
+    {
+        align-self: center;
+        width: 90%;
+    }
+}
+@media(max-width: 310px)
+{
+    #student_text
+    {
+        font-size: 4rem;
+    }
+}
+/* =============== STYLING SERVICES SECTION ========= */
+.services
+{
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services h1
+{
+    color: black;
+}
+
+/* ============ STYLING ABOUT SECTION ============ */
+.about
+{
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about h1
+{
+    color: black;
+}
