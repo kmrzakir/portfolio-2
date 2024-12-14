@@ -18,3 +18,10 @@ hamBurger.addEventListener("click",() => {
     }
 
 })
+
+// JavaScript to dynamically add 'active' class based on the current page URL
+// document.querySelectorAll("ul li a").forEach(link => {
+//     if (link.href === window.location.href) {
+//         link.classList.add("active");
+//     }
+// });
