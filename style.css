@@ -241,7 +241,7 @@ ul li a:hover
 {
     width: 100%;
     height: 100vh;
-    background-color: antiquewhite;
+    background-color: var(--color-secondary);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -256,14 +256,28 @@ ul li a:hover
 {
     width: 100%;
     height: 100vh;
-    background-color: antiquewhite;
+    background-color: var(--color-secondary);
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.about h1
+.about div
 {
-    color: black;
+    margin: 20px;
+}
+.about div h6, .about div p
+{
+    font-size: 1rem;
+    margin: 8px;
+    text-align: justify;
+}
+#passionated_about_text span
+{
+    color: var(--text-color);
+}
+#mycote_text
+{
+    color: var(--text-color);
 }
 
 /* ============ STYLING PROJUCTS SECTION ============ */
